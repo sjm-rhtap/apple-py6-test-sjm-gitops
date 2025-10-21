@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: apple-py6-test-sjm-gitops-repository
+spec:
+  url: https://github.com/sjm-rhtap/apple-py6-test-sjm-gitops

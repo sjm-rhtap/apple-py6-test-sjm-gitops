@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: apple-py6-test-sjm
+  janus-idp.io/tekton: apple-py6-test-sjm
+  backstage.io/kubernetes-id: apple-py6-test-sjm
+  backstage.io/kubernetes-namespace: tssc-app 
+  app.kubernetes.io/part-of: apple-py6-test-sjm
+resources:
+  - deployment.yaml
+  - route.yaml
+  - service.yaml
