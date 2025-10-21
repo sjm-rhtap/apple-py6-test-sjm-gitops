@@ -12,5 +12,5 @@ spec:
   template: 
     spec:
       containers:
-      - image: quay.io/redhat-tssc/task-runner:1.7
+      - image: quay.io/smatula/apple-py6-test-sjm:3c1123a9a8c3826a6cde2568d9d82eda10cc8cba@sha256:97f8f9685a84ebb45ec9aead701be719dffbc11c5d289c4b4b30d7ee22938bc4
         name: container-image  
