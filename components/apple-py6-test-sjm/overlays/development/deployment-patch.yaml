@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:   
-  annotations:  
+metadata:
+  annotations:
     tad.gitops.set/image: ".spec.template.spec.containers[0].image"
     tad.gitops.get/image: ".spec.template.spec.containers[0].image"
     tad.gitops.set/replicas: ".spec.replicas"
-    tad.gitops.get/replicas: ".spec.replicas" 
+    tad.gitops.get/replicas: ".spec.replicas"
   name: apple-py6-test-sjm
 spec:
-  replicas: 1 
-  template: 
+  replicas: 1
+  template:
     spec:
       containers:
-      - image: quay.io/redhat-tssc/task-runner:1.7
-        name: container-image  
+        - image: quay.io/smatula/apple-py6-test-sjm:1e354c4c6373b2803b96aa474cd86c4dc15c154c@sha256:c310b935fefa8e77319933767e3bd9082287980b1caeea276eb61ee001b38f18
+          name: container-image
